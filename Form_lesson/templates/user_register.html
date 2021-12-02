@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form method = 'post'>
+		{% csrf_token %}
+			<h1>User Name</h1>
+				{{ user_info.name }}
+			<h1>Email</h1>
+				{{ user_info.email }}
+			<h1>Phone</h1>
+				{{ user_info.phone }}
+			<hr>
+			<br>
+				{{ error}}
+			<br>
+	<input type = 'submit' value = 'Register'>
+	</form>
+
+</body>
+</html>

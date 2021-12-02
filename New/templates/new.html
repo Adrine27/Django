@@ -1,0 +1,8 @@
+{% for new in news %}
+	<h1> new.title </h1>
+	<hr>
+	<p> {{ new.author }} </p>
+	<br>
+	<img src = '{{ new.picture.url }}'>
+
+{% endfor %}

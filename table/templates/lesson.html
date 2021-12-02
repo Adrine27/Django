@@ -1,0 +1,9 @@
+{% for i in Lesson %}
+	{{ i.name }}
+	<br>
+	{{ i.description }}
+	<br>
+	<hr>
+	{{ i.about }}
+	<a href="{% url 'about' i.slug %}">{{ i.name }}</a>
+{% endfor %}
